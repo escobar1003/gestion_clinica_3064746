@@ -27,9 +27,8 @@ export default function Clinica(){
       headers:{
         "Authorization":"Bearer sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
         "apikey":"sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
-        "Content-Type":"application/json",
-        "Prefer":"return=representation"
-      },
+        "Content-Type":"application/json"
+      },    
       body: JSON.stringify({
         nombre: nombre
       })

@@ -13,10 +13,10 @@ export default function Pacientes(){
   },[])
 
   async function cargarDatos(){
-  await fetch("https://msieiafazgauhfydhizg.supabase.co/rest/v1/paciente",{
+  await fetch("https://pghrprnrnmeayjnqpeil.supabase.co/rest/v1/paciente",{
     headers:{
-      "Authorization":"Bearer sb_publishable_3mtLxaSdMQdPBVuR1kk8Jw_YEyAGnd_",
-      "apikey":"sb_publishable_3mtLxaSdMQdPBVuR1kk8Jw_YEyAGnd_",
+      "Authorization":"Bearer sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
+      "apikey":"sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
       "Content-Type":"application/json"
     }
   })
@@ -25,14 +25,13 @@ export default function Pacientes(){
 }
 
   async function guardar(){
-    await fetch("https://msieiafazgauhfydhizg.supabase.co/rest/v1/paciente",{
+    await fetch("https://pghrprnrnmeayjnqpeil.supabase.co/rest/v1/paciente",{
       method:"POST",
       headers:{
-        "Authorization":"Bearer sb_publishable_3mtLxaSdMQdPBVuR1kk8Jw_YEyAGnd_",
-        "apikey":"sb_publishable_3mtLxaSdMQdPBVuR1kk8Jw_YEyAGnd_",
-        "Content-Type":"application/json",
-        "Prefer":"return=representation"
-      },
+        "Authorization":"Bearer sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
+      "apikey":"sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
+      "Content-Type":"application/json"
+    },
       body: JSON.stringify({
         nombre: nombre,
         cedula: cedula

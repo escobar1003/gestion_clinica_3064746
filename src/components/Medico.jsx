@@ -10,16 +10,16 @@ export default function Medico(){
   },[])
 
   async function cargarDatos(){
-    await fetch("https://pghrprnrnmeayjnqpeil.supabase.co/rest/v1/medico",{
-      headers:{
-        "Authorization":"Bearer sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
-        "apikey":"sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
-        "Content-Type":"application/json"
-      }
-    })
-    .then(res=>res.json())
-    .then(data=>setMedicos(data))
-  }
+  await fetch("https://pghrprnrnmeayjnqpeil.supabase.co/rest/v1/medico",{
+    headers:{
+      "Authorization":"Bearer sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
+      "apikey":"sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
+      "Content-Type":"application/json"
+    }
+  })
+  .then(res=>res.json())
+  .then(data=>setMedicos(data))
+}
 
   async function guardar(){
     await fetch("https://pghrprnrnmeayjnqpeil.supabase.co/rest/v1/medico",{
@@ -27,8 +27,7 @@ export default function Medico(){
       headers:{
         "Authorization":"Bearer sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
         "apikey":"sb_publishable_SpQx6omDaYh9yBy1Xxf5lQ_4S8IUanE",
-        "Content-Type":"application/json",
-        "Prefer":"return=representation"
+        "Content-Type":"application/json"
       },
       body: JSON.stringify({
         nombre: nombre
